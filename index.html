@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Chianchuan's Blog</title><meta name="author" content="Chianchuan"><meta name="copyright" content="Chianchuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Chianchuan&#39;s Blog">
+<meta property="og:url" content="https://www.chianchuan.com/index.html">
+<meta property="og:site_name" content="Chianchuan&#39;s Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.chianchuan.com/img/avatar.jpg">
+<meta property="article:author" content="Chianchuan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.chianchuan.com/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Chianchuan's Blog",
+  "alternateName": [
+    "www.chianchuan.com"
+  ],
+  "url": "https://www.chianchuan.com/"
+}</script><link rel="shortcut icon" href="/img/favicon.svg"><link rel="canonical" href="https://www.chianchuan.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Chianchuan\'s Blog',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><style>
+  /* 1. 首页文章卡片透明度 */
+  #recent-posts > .recent-post-item {
+    background: rgba(255, 255, 255, 0.75) !important;
+  }
+  /* 2. 侧边栏卡片透明度 */
+  .card-widget {
+    background: rgba(255, 255, 255, 0.75) !important;
+  }
+  /* 3. 文章页正文透明度 */
+  #post, #page {
+    background: rgba(255, 255, 255, 0.85) !important;
+  }
+  /* 4. 底部 Footer 区域全黑透明 */
+  #footer {
+    background: rgba(0, 0, 0, 0.7) !important; /* 70% 透明度的纯黑 */
+    color: #eee !important; /* 确保底部文字是浅色的，否则看不清 */
+  }
+  /* 5. 暗黑模式适配 */
+  [data-theme="dark"] #recent-posts > .recent-post-item,
+  [data-theme="dark"] .card-widget,
+  [data-theme="dark"] #post,
+  [data-theme="dark"] #page {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+  [data-theme="dark"] #footer {
+    background: rgba(0, 0, 0, 0.85) !important;
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background:  ;"></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/MisakaMikodosama/PicBed@master/images/ksar.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Chianchuan's Blog</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">Chianchuan's Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/26366.html" title="技术复盘：解决 Docker 容器内 MySQL 拒绝外部连接的问题">技术复盘：解决 Docker 容器内 MySQL 拒绝外部连接的问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2026-01-02T21:24:57.000Z" title="Created 2026-01-03 05:24:57">2026-01-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%A4%8D%E7%9B%98/">技术复盘</a></span></div><div class="content">0. 问题背景在部署 KamaChat 微服务项目时，我通过 Docker 运行了一个包含 MySQL 8.0 的集成镜像。虽然在宿主机（M4 Mac mini）上已经做好了端口映射（3307:3306），且通过 docker exec 进入容器内部可以正常登录数据库，但使用 GoLand 的 Database 工具连接时，始终报错： Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.  1. 排查过程第一阶段：用户权限校验起初我认为是 root 用户默认禁止远程登录的问题。我进入容器执行了常规的权限修改： 123USE mysql;UPDATE user SET host = &#x27;%&#x27; WHERE user = &#x27;root&#x27;;FLUSH PRIVILEGES;  结果： 修改后报错依旧，说明问题不在 MySQL 的用户授权表，而是在更底层的网络监听阶段。 第二阶段：...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/44937.html" title="Hexo 博客架构：双仓库策略与 GitHub Actions 自动化发布实践">Hexo 博客架构：双仓库策略与 GitHub Actions 自动化发布实践</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2026-01-02T18:30:45.000Z" title="Created 2026-01-03 02:30:45">2026-01-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%A4%8D%E7%9B%98/">技术复盘</a></span></div><div class="content">0. 背景由于 2021 年的旧博客源码丢失，仅剩渲染后的 HTML 静态文件，我决定在 M4 Mac mini 上进行博客重建。本次重建的核心目标是实现“源码安全备份”与“一键自动化发布”，确保以后即便更换硬件，也能通过 Git 快速恢复工作流。  1. 架构设计：双仓库策略为了兼顾私密性和展示需求，我采用了双仓库架构：  blog-source (Private)：存放 Hexo 源码、Markdown 原稿、各种配置文件，不对外开放。 UserName.github.io (Public)：仅存放 hexo g 渲染后的静态 HTML 文件，由 GitHub Pages 托管。   2. 本地环境搭建环境整备完全遵循“外置存储”原则，所有环境和数据均位于外置 SSD 中。 A. 基础依赖安装12345# 安装 Node.jsbrew install node# 安装 Hexo 命令行工具npm install -g hexo-cli  B. 初始化与主题安装123456789# 外置SSD的名称是 Samsung，如果不同请自行替换cd /Volumes/Samsung/g...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/35644.html" title="M4 Mac mini 开发环境搭建记录">M4 Mac mini 开发环境搭建记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2026-01-02T17:30:27.000Z" title="Created 2026-01-03 01:30:27">2026-01-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册</a></span></div><div class="content">0. 为什么是 256G 的 Mac mini？2025 年 5 月，趁着毕业答辩顺利完成，我在国补的情况下买了这台 M4 芯片的 Mac mini。在短暂的喜悦之后，我突然发现为了性价比，我选择了最低配的 256GB 存储配置。在 Apple 内存与存储极其昂贵的当下，256GB 的基础款存储在 Go&#x2F;Rust 编译缓存、Docker 镜像以及 IDE 索引的围攻下显得捉襟见肘。于是过了最初的新鲜感后，这台机器便一直在角落里吃灰。 直到新年，我终于想起来这台机器。本着“闲着也是闲着”的想法，我打算对这台机器进行改造。经过彻夜奋战，我建立了一套“内外分离、全链路加速”的环境架构。本文旨在记录这套可复现的配置方案。  1. 外置三星 1T SSD核心逻辑：系统盘（256G）只留“逻辑”，外部盘（Samsung 1T）负责“存储”。 A. 环境变量重定向通过修改 ~/.zshrc，将所有下载成本高、体积庞大的工具链移动至外置盘： 12345# Goexport GOPATH=/Volumes/Samsung/go_workspace# Rustexport RUSTUP_H...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/18092.html" title="深挖 SPA 部署中的 404 难题与僵尸进程收割">深挖 SPA 部署中的 404 难题与僵尸进程收割</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2026-01-02T16:30:23.000Z" title="Created 2026-01-03 00:30:23">2026-01-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%A4%8D%E7%9B%98/">技术复盘</a></span></div><div class="content">0. 凌晨 5 点的 404 警报2026 年 1 月 2 日凌晨，在完成 M4 Mac mini 的开发环境整备后，我开始了基于 Go 的微服务 IM 系统——KamaChat 的部署。然而，在最后关头，一个工程难题挡在了面前：SPA（单页应用）路由刷新崩溃。 本文记录了从现象观察到进程级收割的完整排查过程，旨在为同样在 Apple Silicon 架构下进行混合开发的朋友提供避坑指南。  1. 现象描述：会“消失”的页面在部署完成后，通过 Docker 容器内的 Apache 服务器访问系统，出现以下现象：  正常： 点击页面内的按钮跳转（如从首页点击“登录”），页面通过 Vue 路由正常切换。 崩溃： 在 /login 路径下直接刷新浏览器，瞬间弹出 Apache 404 Not Found。   2. 排查：服务端与客户端的“路径代沟”核心原理这是一个典型的 服务端路由 vs 客户端路由 冲突：  客户端路由 (Vue&#x2F;React)： URL 的变化由 JavaScript 拦截并局部渲染，不向服务器请求新文件。 服务端路由 (Apache&#x2F;Nginx...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/37773.html" title="测试">测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-10-10T02:00:00.000Z" title="Created 2021-10-10 10:00:00">2021-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BF%83%E6%83%85%E7%AC%94%E8%AE%B0/">心情笔记</a></span></div><div class="content"> 注： 本文迁移自 2021 年旧博客，保留当时的心境，记录起点的样子。  虽然早在 10 月 3 日，我便创建了我的第一个个人博客（基于 Hexo，并在 GitHub 上托管的 Blog），但直到 10月 9 日（也就是昨天）我才购买了我的第一个域名（chianchuan.com)，个人 Blog 才算搭建完毕。 还有诸多不完善，就等后面来慢慢完善啦！(￢︿̫̿￢☆)哼哼~ </div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Chianchuan</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/MisakaMikodosama"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my BanGlog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/26366.html" title="技术复盘：解决 Docker 容器内 MySQL 拒绝外部连接的问题">技术复盘：解决 Docker 容器内 MySQL 拒绝外部连接的问题</a><time datetime="2026-01-02T21:24:57.000Z" title="Created 2026-01-03 05:24:57">2026-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/44937.html" title="Hexo 博客架构：双仓库策略与 GitHub Actions 自动化发布实践">Hexo 博客架构：双仓库策略与 GitHub Actions 自动化发布实践</a><time datetime="2026-01-02T18:30:45.000Z" title="Created 2026-01-03 02:30:45">2026-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/35644.html" title="M4 Mac mini 开发环境搭建记录">M4 Mac mini 开发环境搭建记录</a><time datetime="2026-01-02T17:30:27.000Z" title="Created 2026-01-03 01:30:27">2026-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/18092.html" title="深挖 SPA 部署中的 404 难题与僵尸进程收割">深挖 SPA 部署中的 404 难题与僵尸进程收割</a><time datetime="2026-01-02T16:30:23.000Z" title="Created 2026-01-03 00:30:23">2026-01-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/37773.html" title="测试">测试</a><time datetime="2021-10-10T02:00:00.000Z" title="Created 2021-10-10 10:00:00">2021-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/"><span class="card-category-list-name">开发者手册</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BF%83%E6%83%85%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">心情笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%A4%8D%E7%9B%98/"><span class="card-category-list-name">技术复盘</span><span class="card-category-list-count">3</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/Rust/" style="font-size: 1.1em; color: #999">Rust</a> <a href="/tags/Docker/" style="font-size: 1.5em; color: #99a9bf">Docker</a> <a href="/tags/CI-CD/" style="font-size: 1.1em; color: #999">CI/CD</a> <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" style="font-size: 1.1em; color: #999">自动化</a> <a href="/tags/GitHub-Actions/" style="font-size: 1.1em; color: #999">GitHub Actions</a> <a href="/tags/Go/" style="font-size: 1.3em; color: #99a1ac">Go</a> <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/" style="font-size: 1.1em; color: #999">碎碎念</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/tags/macOS/" style="font-size: 1.1em; color: #999">macOS</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              January 2026
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2021/10/">
+            <span class="card-archive-list-date">
+              October 2021
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-01-02T21:43:47.950Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Chianchuan</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js
+  server="netease" 
+  type="playlist" 
+  id="14174016119"
+  fixed="true" 
+  mini="true"
+  list-folded="true"
+  order="random"
+  loop="all"
+  volume="0.5"
+  lrc-type="0">
+</meting-js>
+<script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
